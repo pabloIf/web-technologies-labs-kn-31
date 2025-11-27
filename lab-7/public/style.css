@@ -1,0 +1,5 @@
+body { font-family: Arial; padding: 20px; }
+input, button { margin: 5px; padding: 5px; }
+ul { list-style: none; padding: 0; }
+li { margin: 5px 0; }
+button.delete { margin-left: 10px; color: red; }
