@@ -16,7 +16,7 @@ function loadSongs(artist = '') {
         const li = document.createElement('li');
         li.textContent = `${s.title} - ${s.artist}`;
         const delBtn = document.createElement('button');
-        delBtn.textContent = 'Видалити';
+        delBtn.textContent = 'delete';
         delBtn.classList.add('delete');
         delBtn.onclick = () => deleteSong(s.id);
         li.appendChild(delBtn);

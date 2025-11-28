@@ -41,7 +41,7 @@ app.get('/api/songs', (req, res) => {
 app.get('/api/songs/:id', (req, res) => {
   const songs = readSongs();
   const song = songs.find(s => s.id == req.params.id);
-  if (!song) return res.status(404).json({ message: 'Пісня не знайдена' });
+  if (!song) return res.status(404).json({ message: 'Music not found' });
   res.json(song);
 });
 
@@ -62,7 +62,7 @@ app.post('/api/songs', (req, res) => {
 app.put('/api/songs/:id', (req, res) => {
   const songs = readSongs();
   const index = songs.findIndex(s => s.id == req.params.id);
-  if (index === -1) return res.status(404).json({ message: 'Пісня не знайдена' });
+  if (index === -1) return res.status(404).json({ message: 'Music not found' });
 
   songs[index] = { ...songs[index], ...req.body };
   writeSongs(songs);
@@ -73,7 +73,7 @@ app.put('/api/songs/:id', (req, res) => {
 app.delete('/api/songs/:id', (req, res) => {
   const songs = readSongs();
   const index = songs.findIndex(s => s.id == req.params.id);
-  if (index === -1) return res.status(404).json({ message: 'Пісня не знайдена' });
+  if (index === -1) return res.status(404).json({ message: 'Music not found' });
 
   const deleted = songs.splice(index, 1)[0];
   writeSongs(songs);
