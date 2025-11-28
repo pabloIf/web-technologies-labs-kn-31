@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+    <meta charset="UTF-8">
+    <title>Register event</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Create event</h1>
+
+<form id="eventForm">
+    <label>Title event:</label>
+    <input type="text" name="eventName" required>
+
+    <label>Location:</label>
+    <input type="text" name="location" required>
+
+    <label>Date event:</label>
+    <input type="date" name="eventDate" required>
+
+    <label>Max person on event:</label>
+    <input type="number" name="maxParticipants" min="1" required>
+
+    <button type="submit">Create</button>
+</form>
+
+<div id="messages"></div>
+
+<script src="script.js"></script>
+</body>
+</html>

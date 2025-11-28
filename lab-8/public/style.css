@@ -1,0 +1,21 @@
+body {
+    font-family: Arial;
+    max-width: 600px;
+    margin: 40px auto;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input, button {
+    padding: 10px;
+    font-size: 16px;
+}
+
+#messages {
+    margin-top: 20px;
+    color: rgb(255, 123, 0);
+}
