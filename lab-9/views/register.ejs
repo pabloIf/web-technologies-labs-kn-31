@@ -1,0 +1,14 @@
+<h2>Register</h2>
+
+<% if (messages.error) { %>
+    <p style="color:red"><%= messages.error %></p>
+<% } %>
+
+<form action="/register" method="POST">
+    <input name="name" placeholder="Full name" value="<%= old.name || '' %>">
+    <input name="email" placeholder="Email" value="<%= old.email || '' %>">
+    <input name="password" type="password" placeholder="password">
+    <input name="confirm" type="password" placeholder="Confirm password">
+    <button>Register</button>
+</form>
+<a href="/login">Login</a>
