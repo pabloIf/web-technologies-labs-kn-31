@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<title>Dashboard</title>
+<link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+<div id="dashboard" class="container">
+    <h2>Welcome</h2>
+
+    <form id="taskForm">
+        <input type="text" name="title" placeholder="Нове завдання" required>
+        <select name="priority">
+            <option value="high">high</option>
+            <option value="medium" selected>midle</option>
+            <option value="low">low</option>
+        </select>
+        <button type="submit">Add</button>
+    </form>
+
+    <ul id="tasks"></ul>
+    <canvas id="chart"></canvas>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="/js/app.js"></script>
+</body>
+</html>

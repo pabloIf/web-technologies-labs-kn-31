@@ -1,0 +1,93 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+.container {
+    background: #fff;
+    padding: 20px 30px;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    width: 300px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+input {
+    margin: 5px 0 15px 0;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+button {
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #e6d00e;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #e6d00e;
+}
+
+#msg {
+    text-align: center;
+    color: red;
+    min-height: 20px;
+}
+
+
+
+#dashboard.container {
+    width: 600px;
+    display: block;
+    padding: 20px;
+}
+
+#tasks li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 6px 10px;
+    border-bottom: 1px solid #eee;
+}
+
+#taskForm {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+#taskForm input[type="text"] {
+    flex: 1;
+    padding: 8px;
+}
+
+#taskForm select {
+    padding: 8px;
+}
+
+#taskForm button {
+    padding: 8px 12px;
+}
+
+canvas {
+    display: block;
+    max-width: 100%;
+    margin: 20px auto 0 auto;
+}
